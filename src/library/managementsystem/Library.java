@@ -5,4 +5,20 @@ package library.managementsystem;
  */
 public class Library {
 
+	// Define Attributes
+	
+	
+	// Methods:
+
+	// Add
+	
+	
+	// Remove
+	
+	
+	// Search
+	
+	
+	// Display
+	
 }
