@@ -6,7 +6,10 @@ package library.managementsystem;
 public class Book {
 	
 	// Define private attributes
-	
+	private String title;
+	private String author;
+	private String ISB;
+	private double price;
 	
 	// Default Constructor
 	
