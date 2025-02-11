@@ -23,10 +23,6 @@ public class Library {
 		
 	}
 	
-	
-	
-	
-	
 	// Remove
 	public boolean removeBook(Book book) { 
 		for(int i = 0; i < 5; i++)
@@ -43,7 +39,7 @@ public class Library {
 	// Search
 	public Book searchByISBN(String ISBN) { 
 		for(int i = 0; i < 5; i++) {
-			if( books[i].ISBN == ISBN) 
+			if( books[i].getISBN() == ISBN) 
 			{
 				return books[i];
 			}
