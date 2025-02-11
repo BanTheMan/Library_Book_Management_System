@@ -5,8 +5,9 @@ package library.managementsystem;
  */
 public class Library {
 
-	// Define Attributes
-	
+	private Book[] book;
+	private int count;// Define Attributes
+	private int tester;
 	
 	// Methods:
 
