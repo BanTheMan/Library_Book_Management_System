@@ -15,7 +15,7 @@ public class LibraryApp {
 	Book book1 = new Book();
 	Book book2 = new Book("For a New Liberty", "Murray N. Rothbard", "9781610167314", 64.68);
 	Book book3 = new Book("The Screwtape Letters", "C.S. Lewis", "9798343951851", 67.54);
-	
+	boolean 
 	
 	
 	// Search by ISBN & display Book

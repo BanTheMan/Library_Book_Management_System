@@ -9,8 +9,6 @@ public class Library {
 	private Book[] books = new Book[5];
 	private int count;// Define Attributes
 	
-	public Library() {
-	}
 	// Methods:
 	
 	// Add
