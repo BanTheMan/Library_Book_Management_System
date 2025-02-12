@@ -43,8 +43,9 @@ public class LibraryApp {
 		
 		
 		// Task: Remove Book that exists
-		
-		
+		Ellis.removeBook(bookFound);
+		System.out.println("Removed " + bookFound.getTitle() + ", "
+				+ "Library now holds: " + Ellis.searchByISBN("9798343951851"));
 		
 		// Task: Remove Book that does not exist
 		
