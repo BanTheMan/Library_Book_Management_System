@@ -77,10 +77,11 @@ public class Book {
 	// Compare Functions
 	@Override
 	public boolean equals(Object other) {
+		// Check edge case
 		if (other == null) {
 			return false; 
 		}
-		
+		// Compare ISBN numbers
 		Book book = (Book) other;
 		return this.getISBN().equals(book.getISBN());
 	}
