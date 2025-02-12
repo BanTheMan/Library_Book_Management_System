@@ -15,8 +15,18 @@ public class Library {
 	
 	// Add
 	public boolean addBook(Book book) {
+		if(book == null)
+		{
+			return false;
+		}
 		if(count < 5) {
-			books[count + 1] = book;
+			for(int i = 0; i < count; i++)
+			{
+				if(books[i] == null)
+				{
+					books[i] = book;
+				}
+			}
 			return true;
 		}
 		return false;
@@ -25,7 +35,11 @@ public class Library {
 	
 	// Remove
 	public boolean removeBook(Book book) { 
-		for(int i = 0; i < 5; i++)
+		if(book == null)
+		{
+			return false;
+		}
+		for(int i = 0; i < count; i++)
 		{
 			if(books[i] == book)
 			{
@@ -38,7 +52,7 @@ public class Library {
 	
 	// Search
 	public Book searchByISBN(String ISBN) { 
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < count; i++) {
 			if( books[i].getISBN() == ISBN) 
 			{
 				return books[i];
@@ -49,6 +63,9 @@ public class Library {
 	
 	// Display
 	public void displayBooks() {
-		
+		for(int i = 0; i < count; i++)
+		{
+			System.out.println(books.toString());
+		}
 	}
 }
