@@ -9,7 +9,7 @@ import library.managementsystem.Library;
  */
 public class LibraryApp {
 	
-	public void Main() {
+	public static void main(String[] args) {
 		
 		// Create Library object
 		Library Ellis = new Library();
@@ -17,7 +17,7 @@ public class LibraryApp {
 		// Task: Add Books (min. 3)]
 		// Initialize variables
 		boolean isAdded;
-		Book[] booksToAdd = new Book[3];
+		Book[] booksToAdd = new Book[4];
 		
 		// Create books to be added
 		booksToAdd[0] = new Book();
@@ -38,6 +38,8 @@ public class LibraryApp {
 		
 		
 		// Task: Search by ISBN & display Book
+		Book bookFound = Ellis.searchByISBN("9798343951851");
+		bookFound.toString();
 		
 		
 		// Task: Remove Book that exists
