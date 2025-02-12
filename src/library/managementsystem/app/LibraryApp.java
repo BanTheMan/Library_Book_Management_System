@@ -51,8 +51,15 @@ public class LibraryApp {
 			System.out.print("Failed to remove " + bookFound.getTitle());
 		}
 		
-		// Task: Remove Book that does not exist
 		
+		// Task: Remove Book that does not exist
+		isRemoved = Ellis.removeBook(bookFound);
+		if (!isRemoved) {
+			System.out.println("Attempted to remove " + bookFound.getTitle() + " again... "
+					+ "Library did not hold it!");
+		} else {
+			System.out.print("Library still held a copy of " + bookFound.getTitle());
+		}
 		
 		
 		// Display all Books
