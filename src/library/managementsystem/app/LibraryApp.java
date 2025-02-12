@@ -39,10 +39,11 @@ public class LibraryApp {
 		
 		// Task: Search by ISBN & display Book
 		Book bookFound = Ellis.searchByISBN("9798343951851");
-		bookFound.toString();
+		System.out.println("Searched for ISBN 9798343951851 and found:\n" + bookFound.toString());
 		
 		
 		// Task: Remove Book that exists
+		
 		
 		
 		// Task: Remove Book that does not exist
