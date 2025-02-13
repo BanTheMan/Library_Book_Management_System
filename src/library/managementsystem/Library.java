@@ -14,7 +14,7 @@ public class Library {
 	
 	// Add
 	/**
-	 * @param book
+	 * @param book to be added to the library.
 	 * @return True or false based on if a book was added or not.
 	 */
 	public boolean addBook(Book book) {
@@ -40,7 +40,7 @@ public class Library {
 	
 	// Remove
 	/**
-	 * @param book
+	 * @param book to be removed from the library.
 	 * @return True or false depending on if a book was removed from the library or not.
 	 */
 	public boolean removeBook(Book book) { 
@@ -66,7 +66,7 @@ public class Library {
 	
 	// Search
 	/**
-	 * @param ISBN
+	 * @param ISBN to search for.
 	 * @return Book that matches the ISBN, or null if there is no match.
 	 */
 	public Book searchByISBN(String ISBN) { 
@@ -85,6 +85,9 @@ public class Library {
 	}
 	
 	// Display
+	/** Print the title, author, ISBN, and price of each book in the library
+	 * 
+	 */
 	public void displayBooks() {
 		// Print string description of each book
 		for(Book book: books)
