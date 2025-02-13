@@ -60,7 +60,6 @@ public class Library {
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
 		for(Book book: books) {
-<<<<<<< HEAD
 			if(book != null) {
 				String compare = (book.getISBN());
 				if( compare.equals(ISBN) == true) 
@@ -68,16 +67,6 @@ public class Library {
 					Book copy = new Book(book);
 					return copy;
 				}
-=======
-			if(book == null) {
-				continue;
-			}
-			String compare = (book.getISBN());
-			if( compare.equals(ISBN) == true) 
-			{
-				Book copy = new Book(book);
-				return copy;
->>>>>>> branch 'main' of https://github.com/BanTheMan/Library_Book_Management_System.git
 			}
 		}
 		return null;
@@ -88,16 +77,9 @@ public class Library {
 		// Print string description of each book
 		for(Book book: books)
 		{
-<<<<<<< HEAD
 			if (book != null) {
 				System.out.println(book.toString());
 			}
-=======
-			if(book == null) {
-				continue;
-			}
-			System.out.println(book.toString());
->>>>>>> branch 'main' of https://github.com/BanTheMan/Library_Book_Management_System.git
 		}
 	}
 }
