@@ -44,11 +44,13 @@ public class Library {
 		// Find and remove book
 		for(int i = 0; i < 5; i++)
 		{
-			if(books[i].equals(book) == true)
-			{
-				count--;
-				books[i] = null;
-				return true;
+			if(books[i] != null) {
+				if(books[i].equals(book) == true)
+				{
+					count--;
+					books[i] = null;
+					return true;
+				}
 			}
 		}
 		return false; 
@@ -58,11 +60,13 @@ public class Library {
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
 		for(Book book: books) {
-			String compare = (book.getISBN());
-			if( compare.equals(ISBN) == true) 
-			{
-				Book copy = new Book(book);
-				return copy;
+			if(book != null) {
+				String compare = (book.getISBN());
+				if( compare.equals(ISBN) == true) 
+				{
+					Book copy = new Book(book);
+					return copy;
+				}
 			}
 		}
 		return null;
@@ -73,7 +77,9 @@ public class Library {
 		// Print string description of each book
 		for(Book book: books)
 		{
-			System.out.println(book.toString());
+			if (book != null) {
+				System.out.println(book.toString());
+			}
 		}
 	}
 }

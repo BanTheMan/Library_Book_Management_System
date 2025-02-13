@@ -51,7 +51,7 @@ public class LibraryApp {
 			System.out.println("Successfully removed " + bookFound.getTitle() + ", "
 					+ "Library now holds: " + Ellis.searchByISBN("9798343951851"));
 		} else {
-			System.out.print("Failed to remove " + bookFound.getTitle());
+			System.out.println("Failed to remove " + bookFound.getTitle());
 		}
 		
 		
@@ -61,12 +61,12 @@ public class LibraryApp {
 			System.out.println("Attempted to remove " + bookFound.getTitle() + " again... "
 					+ "Library did not hold it!");
 		} else {
-			System.out.print("Library still held a copy of " + bookFound.getTitle());
+			System.out.println("Library still held a copy of " + bookFound.getTitle());
 		}
 		
 		
 		// Display all Books
-		System.out.print("All books in Library:");
+		System.out.println("All books in Library:");
 		Ellis.displayBooks();
 		
 	}
