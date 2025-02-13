@@ -42,9 +42,9 @@ public class Library {
 			return false;
 		}
 		// Find and remove book
-		for(int i = 0; i < count; i++)
+		for(int i = 0; i < 5; i++)
 		{
-			if(books[i] == book)
+			if(books[i].equals(book) == true)
 			{
 				count--;
 				books[i] = null;
