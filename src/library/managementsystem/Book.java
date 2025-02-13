@@ -29,10 +29,10 @@ public class Book {
 		
 	// Copy Constructor
 	public Book(Book otherBook) {
-		this.title = otherBook.title;
-		this.author = otherBook.author;
-		this.ISBN = otherBook.ISBN;
-		this.price = otherBook.price;
+		this.title = otherBook.getTitle();
+		this.author = otherBook.getAuthor();
+		this.ISBN = otherBook.getISBN();
+		this.price = otherBook.getPrice();
 	}
 	
 	// Getters & Setters
