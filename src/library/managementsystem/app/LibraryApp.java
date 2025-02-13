@@ -4,11 +4,23 @@ package library.managementsystem.app;
 import library.managementsystem.Book;
 import library.managementsystem.Library;
 
-/*
+
+/**
  * Author: Brandon Gomes
  */
 public class LibraryApp {
 	
+	/**
+	 * Default Constructor
+	 * Added for the completeness of the JavaDoc
+	 */
+	public LibraryApp() {
+	}
+	
+	/**
+	 * Main method: tests book and library functionality
+	 * @param args for main method
+	 */
 	public static void main(String[] args) {
 		
 		// Create Library object

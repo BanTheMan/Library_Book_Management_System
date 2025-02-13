@@ -1,7 +1,8 @@
 package library.managementsystem;
 import library.managementsystem.Book;
 
-/*
+
+/**
  * Author: Ivan Rhodes
  */
 public class Library {
@@ -10,10 +11,17 @@ public class Library {
 	private Book[] books = new Book[5];
 	private int count;
 	
+	/**
+	 * Default Constructor
+	 * Added for the completeness of the JavaDoc
+	 */
+	public Library() {
+	}
+	
 	// Methods:
 	
-	// Add
 	/**
+	 * Add book to library
 	 * @param book to be added to the library.
 	 * @return True or false based on if a book was added or not.
 	 */
@@ -37,9 +45,9 @@ public class Library {
 		}
 		return false;
 	}
-	
-	// Remove
+
 	/**
+	 * Remove book from the library
 	 * @param book to be removed from the library.
 	 * @return True or false depending on if a book was removed from the library or not.
 	 */
@@ -64,8 +72,8 @@ public class Library {
 		return false; 
 	}
 	
-	// Search
 	/**
+	 * Search for book with a given ISBN number in the library
 	 * @param ISBN to search for.
 	 * @return Book that matches the ISBN, or null if there is no match.
 	 */
