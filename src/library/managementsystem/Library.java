@@ -13,6 +13,10 @@ public class Library {
 	// Methods:
 	
 	// Add
+	/**
+	 * @param book
+	 * @return True or false based on if a book was added or not.
+	 */
 	public boolean addBook(Book book) {
 		// Check edge case
 		if(book == null)
@@ -35,6 +39,10 @@ public class Library {
 	}
 	
 	// Remove
+	/**
+	 * @param book
+	 * @return True or false depending on if a book was removed from the library or not.
+	 */
 	public boolean removeBook(Book book) { 
 		// Check edge case
 		if(book == null)
@@ -57,6 +65,10 @@ public class Library {
 	}
 	
 	// Search
+	/**
+	 * @param ISBN
+	 * @return Book that matches the ISBN, or null if there is no match.
+	 */
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
 		for(Book book: books) {
