@@ -58,6 +58,9 @@ public class Library {
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
 		for(Book book: books) {
+			if(book == null) {
+				continue;
+			}
 			String compare = (book.getISBN());
 			if( compare.equals(ISBN) == true) 
 			{
@@ -73,6 +76,9 @@ public class Library {
 		// Print string description of each book
 		for(Book book: books)
 		{
+			if(book == null) {
+				continue;
+			}
 			System.out.println(book.toString());
 		}
 	}
