@@ -26,12 +26,11 @@ public class Library {
 				{
 					books[i] = book;
 					count++;
+					return true;
 				}
 			}
-			return true;
 		}
 		return false;
-		
 	}
 	
 	// Remove
@@ -48,6 +47,7 @@ public class Library {
 			{
 				count--;
 				books[i] = null;
+				return true;
 			}
 		}
 		return false; 
@@ -57,9 +57,10 @@ public class Library {
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
 		for(int i = 0; i < count; i++) {
-			if( books[i].getISBN() == ISBN) 
+			if( books[i].getISBN().compareTo(ISBN) == 0) 
 			{
-				return books[i];
+				Book copy = new Book(books[i]);
+				return copy;
 			}
 		}
 		return null;
