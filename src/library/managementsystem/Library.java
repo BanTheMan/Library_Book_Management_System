@@ -6,8 +6,9 @@ import library.managementsystem.Book;
  */
 public class Library {
 
+	// Define Attributes
 	private Book[] books = new Book[5];
-	private int count;// Define Attributes
+	private int count;
 	
 	// Methods:
 	
