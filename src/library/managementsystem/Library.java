@@ -69,9 +69,9 @@ public class Library {
 	// Display
 	public void displayBooks() {
 		// Print string description of each book
-		for(int i = 0; i < count; i++)
+		for(Book book: books)
 		{
-			System.out.println(books.toString());
+			System.out.println(book.toString());
 		}
 	}
 }
