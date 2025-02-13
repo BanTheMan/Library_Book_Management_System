@@ -57,11 +57,11 @@ public class Library {
 	// Search
 	public Book searchByISBN(String ISBN) { 
 		// Compare given ISBN to books in Library
-		for(int i = 0; i < count; i++) {
-			String compare = (books[i].getISBN());
+		for(Book book: books) {
+			String compare = (book.getISBN());
 			if( compare.equals(ISBN) == true) 
 			{
-				Book copy = new Book(books[i]);
+				Book copy = new Book(book);
 				return copy;
 			}
 		}
